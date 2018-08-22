@@ -24,13 +24,13 @@
                     <td><c:out value="${u.username}"/></td>
                     <td><c:out value="${u.password}"/></td>
                     <td><c:out value="${u.role}"/></td>
-                    <td><a href="DeleteServlet?userid=<c:out value="${u.userid}"/>">Delete</a></td>
-                    <td><a href="EditServlet?userid=<c:out value="${u.userid}" />">Edit</a></td>
+                    <td><a href="Delete?userid=<c:out value="${u.userid}"/>">Delete</a></td>
+                    <td><a href="Edit?userid=<c:out value="${u.userid}" />">Edit</a></td>
                 </tr>
             </c:forEach> 
         </table>
         <h1>Create User !</h1>
-        <form action="CreateServlet"> 
+        <form action="Create"> 
             <table>
                 <tr>
                     <td>username</td>
